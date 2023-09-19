@@ -82,27 +82,28 @@ def kupisch_series(n, I=1):
         yield [I]
 
 
-lines = []
-N = 5
-for n in range(2, N+1):
-    for k in kupisch_series(n):
-        #k = kupisch(inc)
-        relations = rels(k)
-        inj = [I(i,k,relations) for i in range(len(k))]
-        proj = [P(i,k) for i in range(len(k))]
+def search_algebras(N):
+    lines = []
+    for n in range(2, N+1):
+        for k in kupisch_series(n):
+            #k = kupisch(inc)
+            relations = rels(k)
+            inj = [I(i,k,relations) for i in range(len(k))]
+            proj = [P(i,k) for i in range(len(k))]
 
-        pd = projdim_of_inj(inj, proj)
+            pd = projdim_of_inj(inj, proj)
 
-        s = set(relations.values())
-        e = set(relations.keys())
-        s = s.union(e)
+            s = set(relations.values())
+            e = set(relations.keys())
+            s = s.union(e)
 
-        has_enough_relations = True#s == set(range(n))
+            has_enough_relations = s == set(range(n))
 
-        if has_enough_relations and not isAG(proj, pd, inj):
-            lines += latex(len(k), list(relations.items()))
-            print(k)
-    print(n, '/', N)
+            if has_enough_relations and not isAG(proj, pd, inj):
+                lines += latex(len(k), list(relations.items()))
+                print(k)
+        print(n, '/', N)
+    return lines
 with open("diagram.tex", mode="wt") as f:
-    f.writelines(lines)
+    f.writelines(search_algebras(18))
 print('sucess')
