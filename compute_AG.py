@@ -97,7 +97,7 @@ def search_algebras(N):
             e = set(relations.keys())
             s = s.union(e)
 
-            has_enough_relations = s == set(range(n))
+            has_enough_relations = s == set(range(n-1))
 
             if has_enough_relations and not isAG(proj, pd, inj):
                 lines += latex(len(k), list(relations.items()))
@@ -105,5 +105,5 @@ def search_algebras(N):
         print(n, '/', N)
     return lines
 with open("diagram.tex", mode="wt") as f:
-    f.writelines(search_algebras(18))
+    f.writelines(search_algebras(8))
 print('sucess')

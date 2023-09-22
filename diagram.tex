@@ -1,44 +1,52 @@
 \begin{center}
   \begin{tikzcd}
-    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3
+    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4 \arrow{r}[name=a4]{} & 5 \arrow{r}[name=a5]{} & 6
     \arrow[from=a0, to=a2, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a1, to=a3, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a2, to=a4, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a3, to=a5, bend left=80, no head, dashed]{r}{}
   \end{tikzcd}
 \end{center}
 
 \begin{center}
   \begin{tikzcd}
-    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4
+    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4 \arrow{r}[name=a4]{} & 5 \arrow{r}[name=a5]{} & 6 \arrow{r}[name=a6]{} & 7
     \arrow[from=a0, to=a2, bend left=80, no head, dashed]{r}{}
-    \arrow[from=a2, to=a3, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a1, to=a3, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a2, to=a4, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a3, to=a5, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a5, to=a6, bend left=80, no head, dashed]{r}{}
   \end{tikzcd}
 \end{center}
 
 \begin{center}
   \begin{tikzcd}
-    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4
+    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4 \arrow{r}[name=a4]{} & 5 \arrow{r}[name=a5]{} & 6 \arrow{r}[name=a6]{} & 7
     \arrow[from=a0, to=a1, bend left=80, no head, dashed]{r}{}
     \arrow[from=a1, to=a3, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a2, to=a4, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a3, to=a5, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a4, to=a6, bend left=80, no head, dashed]{r}{}
   \end{tikzcd}
 \end{center}
 
 \begin{center}
   \begin{tikzcd}
-    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4
-    \arrow[from=a1, to=a3, bend left=80, no head, dashed]{r}{}
-  \end{tikzcd}
-\end{center}
-
-\begin{center}
-  \begin{tikzcd}
-    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4
-    \arrow[from=a0, to=a2, bend left=80, no head, dashed]{r}{}
-  \end{tikzcd}
-\end{center}
-
-\begin{center}
-  \begin{tikzcd}
-    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4
+    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4 \arrow{r}[name=a4]{} & 5 \arrow{r}[name=a5]{} & 6 \arrow{r}[name=a6]{} & 7
     \arrow[from=a0, to=a3, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a1, to=a4, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a2, to=a5, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a4, to=a6, bend left=80, no head, dashed]{r}{}
+  \end{tikzcd}
+\end{center}
+
+\begin{center}
+  \begin{tikzcd}
+    0 \arrow{r}[name=a0]{} & 1 \arrow{r}[name=a1]{} & 2 \arrow{r}[name=a2]{} & 3 \arrow{r}[name=a3]{} & 4 \arrow{r}[name=a4]{} & 5 \arrow{r}[name=a5]{} & 6 \arrow{r}[name=a6]{} & 7
+    \arrow[from=a0, to=a2, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a1, to=a4, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a2, to=a5, bend left=80, no head, dashed]{r}{}
+    \arrow[from=a3, to=a6, bend left=80, no head, dashed]{r}{}
   \end{tikzcd}
 \end{center}
 
